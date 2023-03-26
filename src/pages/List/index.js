@@ -44,7 +44,6 @@ function ListPage() {
 	}, [getData])
 
 	console.log('issues : ' + issues)
-
 	return (
 		<>
 			<>
