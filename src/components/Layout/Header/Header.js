@@ -53,7 +53,7 @@ function Header() {
 			<S.Container>
 				<S.Image
 					onClick={() => (window.location.href = '/')}
-					src={`${process.env.PUBLIC_URL}/logo.png`}
+					src={`${process.env.REACT_APP_PUBLIC_URL}/logo.png`}
 					alt="logo"
 				/>
 				<S.Text>
