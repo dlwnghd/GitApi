@@ -54,6 +54,7 @@ function ListPage() {
 						<S.Wrapper>
 							{issues.map(issue => (
 								<IssueCard
+									key={issue.number}
 									owner={owner}
 									repository={repository}
 									number={issue.number}
