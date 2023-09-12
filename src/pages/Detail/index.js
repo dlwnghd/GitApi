@@ -103,7 +103,7 @@ const Container = styled.div`
 	width: 70%;
 	${FlexColumnCSS}
 	padding-top: 40px;
-	@media screen and (max-width: 1700px) {
+	@media screen and (max-width: 1500px) {
 		width: 90%;
 	}
 `
@@ -137,8 +137,8 @@ const Box = styled.div`
 	border-radius: 20px;
 	margin-right: 30px;
 	padding: 20px;
-	@media screen and (max-width: 1700px) {
-		width: 100%;
+	@media screen and (max-width: 1500px) {
+		width: 90%;
 	}
 	@media screen and (max-width: 700px) {
 		font-size: 14px;
@@ -148,7 +148,7 @@ const Box = styled.div`
 const SideBox = styled.div`
 	width: 15%;
 	${FlexColumnCSS}
-	@media screen and (max-width: 1700px) {
+	@media screen and (max-width: 1500px) {
 		display: none;
 	}
 `

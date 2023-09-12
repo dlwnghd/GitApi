@@ -20,6 +20,10 @@ const globalStyles = css`
 		}
 	}
 
+	code {
+		text-wrap: balance;
+	}
+
 	:root {
 		--color-dark-white: #f9f7f7;
 		--color-pink: #f2d7d9;
