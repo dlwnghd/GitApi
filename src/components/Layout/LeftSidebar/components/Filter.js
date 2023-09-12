@@ -42,4 +42,8 @@ export default Filter
 
 const Selector = styled.select`
 	float: right;
+	border: none;
+	background-color: lightgreen;
+	border-radius: 2rem;
+	padding: 0.5rem;
 `
