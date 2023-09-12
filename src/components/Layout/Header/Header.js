@@ -57,9 +57,9 @@ function Header() {
 					alt="logo"
 				/>
 				<S.Text>
-					주홍아
+					GitHub
 					<br />
-					공부햇
+					Issue Search
 				</S.Text>
 				<S.InputBox>
 					<S.Input

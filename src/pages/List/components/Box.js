@@ -23,14 +23,11 @@ function IssueBox({
 	commentLen,
 	updatedAt,
 }) {
-	// console.log(typeof updatedAt)
 	const dispatch = useDispatch()
 	const navigate = useNavigate()
 
 	// 카드 클릭 => 상세페이지로 이동
 	const ClickCard = id => {
-		console.log('🔴🔴🔴🔴🔴🔴🔴')
-		console.log(id)
 		dispatch(getIssue({ owner, repository, id }))
 		navigate(`/${owner}/${repository}/${id}`)
 	}

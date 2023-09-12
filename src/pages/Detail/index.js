@@ -35,8 +35,6 @@ function DetailPage() {
 		getData()
 	}, [getData])
 
-	console.log(anIssue)
-
 	return (
 		<>
 			{getIssueState.loading ? (

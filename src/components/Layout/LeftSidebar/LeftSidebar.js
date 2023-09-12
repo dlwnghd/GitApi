@@ -29,18 +29,26 @@ function LeftSidebar() {
 	}
 
 	return (
-		<FULL>
-			<Title>
-				<h1>Issue List</h1>
-				<SortArea>
-					<button onClick={() => changeSort('created')}>생성순</button>
-					<button onClick={() => changeSort('updated')}>업데이트순</button>
-					<button onClick={() => changeSort('comments')}>댓글순</button>
-				</SortArea>
-				<Filter />
-			</Title>
+		<S.FULL>
+			<S.Title>
+				<S.TitleSlide>
+					<h1>Issue List</h1>
+					<S.SortArea>
+						<S.SortButton onClick={() => changeSort('created')}>
+							생성순
+						</S.SortButton>
+						<S.SortButton onClick={() => changeSort('updated')}>
+							업데이트순
+						</S.SortButton>
+						<S.SortButton onClick={() => changeSort('comments')}>
+							댓글순
+						</S.SortButton>
+						<Filter />
+					</S.SortArea>
+				</S.TitleSlide>
+			</S.Title>
 			<Outlet />
-		</FULL>
+		</S.FULL>
 	)
 }
 export default LeftSidebar
@@ -56,11 +64,27 @@ const Title = styled.div`
 	text-align: center;
 `
 
+const TitleSlide = styled.div`
+	position: sticky;
+	top: 9rem;
+`
+
 const SortArea = styled.div`
 	display: flex;
 	justify-content: space-evenly;
 `
 
+const SortButton = styled.button`
+	border: none;
+	background-color: lightgreen;
+	border-radius: 2rem;
+	padding: 0.5rem;
+`
+
 const S = {
-	LeftSidebar,
+	FULL,
+	Title,
+	TitleSlide,
+	SortArea,
+	SortButton,
 }

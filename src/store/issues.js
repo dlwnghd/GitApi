@@ -19,7 +19,6 @@ const initialState = {
 export const getIssues = createAsyncThunk(
 	'issues/getIssues',
 	async ({ owner, repository, params }) => {
-		console.log('dispatch ----> ', owner, repository, params)
 		const res = await IssuesAPI.getData(owner, repository, params)
 		return res.data
 	},

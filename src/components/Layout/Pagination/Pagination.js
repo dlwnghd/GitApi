@@ -32,10 +32,6 @@ function Pagination({ total, limit, sortType, page }) {
 		navigate(`${currentLocation}/${number}/${sortType}/${limit}`)
 	}
 
-	console.log('page : ' + page)
-	console.log('startPage : ' + startPage)
-	console.log('endPage : ' + endPage)
-
 	return (
 		<>
 			<Nav>

@@ -43,7 +43,6 @@ function ListPage() {
 		getData()
 	}, [getData])
 
-	console.log('issues : ' + issues)
 	return (
 		<>
 			<>
